@@ -61,8 +61,6 @@ The assembler rejected this immediately. Why? Because TriCore instructions gener
 
 To solve this, I had to construct the value manually using the `movh` (Move High) instruction, which loads data into the upper 16 bits of a register:
 
-Code snippet
-
 ```
 movh %d8, 0x8000      /* Loads 0x8000 into the upper half -> 0x80000000 */
 and  %d7, %d7, %d8    /* Now we can AND register to register */
@@ -96,8 +94,6 @@ The fix? Abandoning the fancy UI. I had to go old-school, stepping through instr
 Despite the crashes and syntax errors, I eventually stepped through the loop. I watched the `input_seed_mem` load from address `0x80000000`, saw the XOR operations toggle the bits in register `%d4`, and finally, the calculated key landed in `%d2`.
 
 Here is the final, working assembly snippet that survived the process:
-
-Code snippet
 
 ```
 /* Part of the SeedToKey Loop */
