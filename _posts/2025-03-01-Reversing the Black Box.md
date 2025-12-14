@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reversing the Black Box: Running TriCore Assembly on Bare Metal"
-date:   2025-03-01 10:00:00 +0330
+date:   2025-03-11 12:10:00 +0330
 categories: automotive
 ---
 
@@ -120,7 +120,7 @@ skip_xor:
 
 ### Why Bother?
 
-You might ask why anyone would hand-write assembly for a chip that has excellent C compilers. The answer isn't efficiency—it's understanding.
+You might ask why anyone would hand-write assembly for a chip that has excellent C compilers. The answer isn't efficiency, it's understanding.
 
 When you are reverse engineering an ECU dump, you don't get C source code. You get this: raw instructions, weird addressing modes, and compiler optimizations. By struggling through the process of writing it yourself, you learn to recognize the patterns. You understand why a decompiler output looks the way it does.
 
