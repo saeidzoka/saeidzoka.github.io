@@ -1,0 +1,6 @@
+title: Emzoka
+description: Embedded Systems & Automotive Notes
+author: Saeid Zoka
+theme: minima
+plugins:
+  - jekyll-feed
